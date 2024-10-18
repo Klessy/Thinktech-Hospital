@@ -1,0 +1,47 @@
+.btn-main {
+  box-shadow: inset 0 0 0 0 var(--bs-primary);
+  color: var(--white);
+  font-weight: 600;
+  transition: 0.5s;
+  border-radius: 50rem !important;
+  padding: 1rem 3rem;
+  background-color: #15b9d9;
+  border-color: #15b9d9;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+  user-select: none;
+  border: transparent;
+}
+
+.btn-main:hover {
+  box-shadow: inset 300px 0 0 0 var(--bs-light) !important;
+  color: var(--bs-light) !important;
+  transition: 0.5s;
+  color: var(--primary) !important;
+  border: 1px solid;
+}
+
+/* .btn.btn-light {
+  box-shadow: inset 0 0 0 0 var(--bs-primary);
+}
+
+.btn.btn-light:hover {
+  box-shadow: inset 300px 0 0 0 var(--bs-primary);
+  color: var(--bs-light) !important;
+}
+
+.btn-hover {
+  transition: 0.5s;
+}
+
+.btn-hover:hover {
+  color: var(--bs-secondary) !important;
+}
+
+.border {
+  border: 1px solid;
+} */

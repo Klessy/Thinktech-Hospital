@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button";
 import AboutImg from "../../assets/about.jpg";
 import AboutImg2 from "../../assets/service-5.jpg";
 
@@ -50,7 +51,7 @@ const About = () => {
             href="#"
             className="btn btn-primary rounded-pill text-white py-3 px-5"
           >
-            Discover More
+            <Button title={"Discover more"} />
           </a>
         </div>
       </div>

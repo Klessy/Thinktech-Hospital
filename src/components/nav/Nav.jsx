@@ -35,7 +35,7 @@ const Nav = () => {
               +2349035917372
             </a>
             <a
-              href="mailto:  info@ausmedhospital.com"
+              href="mailto: info@ausmedhospital.com"
               className="text-light mr-4"
             >
               <i className="fas fa-envelope text-primary mr-2"></i>
@@ -105,10 +105,13 @@ const Nav = () => {
             );
           })}
           <div className="mobile-socials">
-            <a href="#" className="btn-sm-square mr-2">
+            <a href="tel: +2348103783162" className="btn-sm-square mr-2">
               <i className="fas fa-phone-alt mobile_icon text-primary mr-2"></i>
             </a>
-            <a href="#" className="btn-sm-square mr-2">
+            <a
+              href="mailto: info@ausmedhospital.com"
+              className="btn-sm-square mr-2"
+            >
               <i className="fas fa-envelope mobile_icon text-primary mr-2"></i>
             </a>
           </div>

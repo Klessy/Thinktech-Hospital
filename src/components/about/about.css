@@ -6,6 +6,7 @@
   padding: 10rem 0;
   display: flex;
   align-items: center;
+  gap: 3rem;
 }
 
 .about__img-con {
@@ -28,20 +29,19 @@
 .about__img {
   /* position: relative; */
   /* overflow: hidden; */
-  width: 100%;
-  /* height: 400px; */
+  /* width: 40%; */
   border-radius: 10px;
 }
 
 .first__img {
-  /* width: 100%; */
+  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .text-start {
-  width: 40%;
+  width: 55%;
 }
 
 .service_icon i {

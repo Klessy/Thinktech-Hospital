@@ -32,7 +32,7 @@ const About = () => {
             healthcare solutions that enhance the quality of life for our
             patients
           </p>
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <p className="text-secondary">
               <i className="fa fa-check text-primary me-2"></i> Refresing to get
               such a personal touch.
@@ -45,7 +45,7 @@ const About = () => {
               <i className="fa fa-check text-primary me-2"></i> Velit esse
               cillum dolore eu fugiat nulla pariatur.
             </p>
-          </div>
+          </div> */}
           <a
             href="#"
             className="btn btn-primary rounded-pill text-white py-3 px-5"

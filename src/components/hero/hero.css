@@ -133,6 +133,11 @@
     margin: 0 auto;
     text-align: center;
   }
+
+  .react-slideshow-container .default-nav {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 @media screen and (max-width: 450px) {

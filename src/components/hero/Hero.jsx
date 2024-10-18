@@ -18,7 +18,7 @@ const Hero = () => {
                 <img src={img} alt={title} />
                 <div className="inner-carousel">
                   <div className="hero-con container">
-                    <h3 className="hero-p">cleaning service</h3>
+                    <h3 className="hero-p">Health service</h3>
                     <h1 className="">{title}</h1>
                     <p>{desc}</p>
                     <a href="#contact">

@@ -7,7 +7,7 @@ const Services = () => {
   const [arrow, setArrow] = useState("");
 
   const contactUs = () => {
-    setArrow(<i class="bi bi-arrow-right"></i>);
+    setArrow(<i className="bi bi-arrow-right"></i>);
   };
 
   return (

@@ -9,6 +9,7 @@
   --bs-light: #faf9fb;
   --bs-img: rgba(239, 162, 134, 0.3);
   --bs-secondary: #efa286;
+  --secondary-gray: #e8e8e8;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
@@ -25,6 +26,7 @@
   --dark-gray: #646464;
   --black: #000;
   --dark-green: #2c6054;
+  --dark-blue: #170d36;
 
   --transition: all 300ms ease;
 
@@ -106,6 +108,10 @@ p {
 
 .mt-4 {
   margin-top: 1.5rem;
+}
+
+.mt-6 {
+  margin-top: 3rem;
 }
 
 .mr-0 {
@@ -286,6 +292,20 @@ p {
 .text-light {
   color: #faf9fb !important;
 }
+
+/* ==================== TESTIMONIAL SLIDE GENERAL STYLES ==================== */
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+/* .slick-prev:before,
+.slick-next:before {
+  font-size: 25px;
+  opacity: 0.8;
+  color: var(--primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
 
 @media screen and (max-width: 900px) {
   /* section title Starts */

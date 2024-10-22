@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "../Button";
 import AboutImg from "../../assets/about.jpg";
-import AboutImg2 from "../../assets/service-5.jpg";
 
 import "./about.css";
 
@@ -21,9 +20,7 @@ const About = () => {
         </div>
         <div className="section-title text-start mb-5">
           <h5 className="sub-title text_title mb-0">About Us</h5>
-          <h1 className="text_subtitle mb-4">
-            We are Ready to Help Improve Your Treatment.
-          </h1>
+          <h1 className="text_subtitle mb-4">A Legacy of Care & Excellence</h1>
           <p className="mb-4">
             Founded in [Year], Ausmed Hospital has been dedicated to offering
             exceptional healthcare services for the community. With a team of
@@ -47,10 +44,7 @@ const About = () => {
               cillum dolore eu fugiat nulla pariatur.
             </p>
           </div> */}
-          <a
-            href="#"
-            className="btn btn-primary rounded-pill text-white py-3 px-5"
-          >
+          <a href="#" className="discover__more text-white py-3 px-5">
             <Button title={"Discover more"} />
           </a>
         </div>

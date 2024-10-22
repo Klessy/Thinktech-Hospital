@@ -56,6 +56,11 @@
   text-align: justify;
 }
 
+.discover__more {
+  display: flex;
+  align-items: flex-start;
+}
+
 /*========================= Media Query for about section ===========================*/
 @media screen and (max-width: 900px) {
   .about__container {

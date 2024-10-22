@@ -1,0 +1,43 @@
+.why__section {
+  background-color: var(--white);
+}
+
+.why__container {
+  padding: 10rem 0;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.why__text {
+  width: 50%;
+  text-align: left;
+}
+
+.why__img {
+  width: 70rem;
+  border-radius: 10px;
+}
+
+.first__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ==================== MOBILE SCREEN =================== */
+@media screen and (max-width: 900px) {
+  .why__container {
+    flex-direction: column;
+  }
+
+  .why__text {
+    width: 100%;
+  }
+
+  .why__img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}

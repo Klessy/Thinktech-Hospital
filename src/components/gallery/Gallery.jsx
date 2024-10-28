@@ -6,7 +6,7 @@ import "./gallery.css";
 
 const Gallery = () => {
   return (
-    <section className="gallery__section">
+    <section className="gallery__section" id="gallery">
       <div className="section-title mb-5 container">
         <div className="sub-style">
           <h5 className="sub-title text_title mb-0">Gallery</h5>

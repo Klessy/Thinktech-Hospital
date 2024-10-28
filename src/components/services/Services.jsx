@@ -1,17 +1,30 @@
 import { useState } from "react";
 import { servicesData } from "../../data";
+import Button from "../Button";
 
 import "./services.css";
 
 const Services = () => {
   const [arrow, setArrow] = useState("");
+  const [moreService, setMoreService] = useState(6);
+  const [showLess, setShowLess] = useState("Show Less");
 
   const contactUs = () => {
     setArrow(<i className="bi bi-arrow-right"></i>);
   };
 
+  const slice = servicesData.slice(0, moreService);
+
+  const loadMore = () => {
+    setMoreService(moreService + 3);
+  };
+
+  const loadLess = () => {
+    setMoreService(6);
+  };
+
   return (
-    <section className="service__section">
+    <section className="service__section" id="services">
       <div className="service__container container">
         <div className="section-title">
           <div className="sub-style">
@@ -25,7 +38,7 @@ const Services = () => {
           </p>
         </div>
         <div className="service_con" onMouseOver={contactUs}>
-          {servicesData.map((service) => {
+          {slice.map((service) => {
             const { id, icon, title, desc } = service;
             return (
               <article key={id}>
@@ -40,6 +53,13 @@ const Services = () => {
             );
           })}
           ;
+        </div>
+        <div className="service-btn">
+          {moreService <= 10 ? (
+            <Button onClick={() => loadMore()} title={"More of our service"} />
+          ) : (
+            <Button onClick={() => loadLess()} title={"Show Less"} />
+          )}
         </div>
       </div>
     </section>

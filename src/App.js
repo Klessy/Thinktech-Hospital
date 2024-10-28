@@ -8,6 +8,9 @@ import {
   Gallery,
   Testimonial,
   FAQs,
+  Contact,
+  Footer,
+  FloatingNav,
 } from "./components";
 
 function App() {
@@ -21,6 +24,9 @@ function App() {
       <Gallery />
       <Testimonial />
       <FAQs />
+      <Contact />
+      <Footer />
+      <FloatingNav />
       {/* <About /> */}
     </div>
   );

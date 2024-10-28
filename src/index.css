@@ -257,6 +257,7 @@ p {
   justify-content: center;
   font-weight: normal;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .btn.btn-primary {

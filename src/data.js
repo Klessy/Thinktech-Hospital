@@ -1,4 +1,10 @@
 import { RiDoubleQuotesR } from "react-icons/ri";
+import { AiFillHome } from "react-icons/ai";
+import { BsPersonFill } from "react-icons/bs";
+import { MdHomeRepairService } from "react-icons/md";
+import { AiFillAppstore } from "react-icons/ai";
+import { AiFillMessage } from "react-icons/ai";
+
 import Carousel_1 from "./assets/carousel-1.jpg";
 import Carousel_2 from "./assets/carousel-2.jpg";
 import Carousel_3 from "./assets/carousel-3.jpg";
@@ -57,7 +63,7 @@ const dataSlider = [
   },
   {
     id: 2,
-    title: "Best Solution for Painful life ",
+    title: "Center for integrative Health Care",
     desc: "Comprehensive Medical Services for Every Need",
     img: Carousel_2,
     btn: "Get a Quote",
@@ -111,6 +117,34 @@ const servicesData = [
     id: 6,
     icon: <i class="fa fa-2x fa-microscope text-white"></i>,
     title: "Diagnostic Imaging",
+    desc: "Advanced imaging technologies for accurate diagnoses, including MRI, CT, and ultrasound.",
+    // img: Confirned_1,
+  },
+  {
+    id: 7,
+    icon: <i class="fa fa-2x fa-microscope text-white"></i>,
+    title: "Acupuncture",
+    desc: "Advanced imaging technologies for accurate diagnoses, including MRI, CT, and ultrasound.",
+    // img: Confirned_1,
+  },
+  {
+    id: 8,
+    icon: <i class="fa fa-2x fa-microscope text-white"></i>,
+    title: "Energy Medicine",
+    desc: "Advanced imaging technologies for accurate diagnoses, including MRI, CT, and ultrasound.",
+    // img: Confirned_1,
+  },
+  {
+    id: 9,
+    icon: <i class="fa fa-2x fa-microscope text-white"></i>,
+    title: "Naturopathic clinic",
+    desc: "Advanced imaging technologies for accurate diagnoses, including MRI, CT, and ultrasound.",
+    // img: Confirned_1,
+  },
+  {
+    id: 10,
+    icon: <i class="fa fa-2x fa-microscope text-white"></i>,
+    title: "Iridiology Service",
     desc: "Advanced imaging technologies for accurate diagnoses, including MRI, CT, and ultrasound.",
     // img: Confirned_1,
   },
@@ -254,4 +288,12 @@ const faqs = [
   },
 ];
 
-export { dataSlider, servicesData, gallery, Testimonials, faqs };
+const mobileNav = [
+  { id: 1, link: "#", icon: <AiFillHome /> },
+  { id: 2, link: "#about", icon: <BsPersonFill /> },
+  { id: 3, link: "#services", icon: <MdHomeRepairService /> },
+  { id: 4, link: "#gallery", icon: <AiFillAppstore /> },
+  { id: 5, link: "#contact", icon: <AiFillMessage /> },
+];
+
+export { dataSlider, servicesData, gallery, Testimonials, faqs, mobileNav };

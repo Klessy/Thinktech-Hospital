@@ -76,6 +76,12 @@
   text-align: left;
 }
 
+.service-btn {
+  margin-top: 3rem;
+  text-align: center;
+  margin-inline: auto;
+}
+
 /* ===================== Media Query for service section ================================== */
 @media screen and (max-width: 900px) {
   .service_con {

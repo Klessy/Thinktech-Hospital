@@ -63,16 +63,12 @@ const Contact = () => {
                 <h3>Nigeria</h3>
                 <span className="underline"></span>
                 <p className="">
-                  No 7 ayetoro street
-                  <br /> <strong> Port Harcourt, Rivers state</strong>
+                  19, Rumuapu / Eneka Road,
+                  {/* <br /> <strong> Port Harcourt, Rivers state</strong> */}
                 </p>
                 <p className="">
-                  28/30 Royce road
-                  <br /> <strong> Owerri, Imo state.</strong>
-                </p>
-                <p className="">
-                  No 178 Ikot-Ekpene road
-                  <br /> <strong>Aba, Abia state.</strong>
+                  Rukpokwu by Market Junction
+                  <br /> <strong> Port Harcourt, Rivers state.</strong>
                 </p>
               </div>
               {/*  */}
@@ -99,7 +95,7 @@ const Contact = () => {
                     href="mailto:info@ausmedhospital.com"
                   >
                     <i className="fa fa-envelope-open text-primary me-2"></i>
-                    1@assetsupportservices.co.uk
+                    info@ausmedhospital.com
                   </a>
                 </div>
               </div>
@@ -252,14 +248,14 @@ const Contact = () => {
         </div>
       </div>
       {/* map */}
-      <iframe
+      {/* <iframe
         src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxfor28/30 Royce road owerri, imo stated&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         allowFullScreen=""
         loading="lazy"
         samesite="Strict"
         title="map"
         style={{ width: "100%", height: "45rem", border: "0px" }}
-      ></iframe>
+      ></iframe> */}
     </section>
   );
 };

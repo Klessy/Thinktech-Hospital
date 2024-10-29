@@ -65,8 +65,8 @@ const Footer = () => {
             <a href="#gallery" className="footer__links">
               Gallery
             </a>
-            <a href="#works" className="footer__links">
-              Projects
+            <a href="#services" className="footer__links">
+              Services
             </a>
             <a href="#contact" className="footer__links">
               Contact
@@ -80,10 +80,9 @@ const Footer = () => {
             <span className="footer__underline"></span>
 
             <p className="work-day font__main">Monday - Friday:</p>
-            <p className="work-time font__main">7:00am - 21:00pm</p>
-            <p className="work-day font__main">Saturday:</p>
-            <p className="work-time font__main">7:00am - 19:00pm</p>
-            <p className="work-day font__main ">Sunday - Closed</p>
+            <p className="work-time font__main">00:00am - 24:00pm</p>
+            <p className="work-day font__main">Saturday-Sunday</p>
+            <p className="work-time font__main">00:00am - 24:00pm</p>
           </div>
 
           {/* middle div */}

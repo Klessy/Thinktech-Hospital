@@ -1,13 +1,19 @@
-import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Button from "../Button";
 import WhyUsImg from "../../assets/price-4.jpg";
 
 import "./whyus.css";
 
 const WhyUs = () => {
+  useEffect(() => {
+    AOS.init({ duration: 600 });
+  }, []);
+
   return (
     <section className="why__section">
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div className="why__container">
           <div className="why__text ">
             <div className="section-title mb-5">
@@ -24,16 +30,16 @@ const WhyUs = () => {
             </p>
             <div className="mb-4">
               <p className="text-secondary">
-                <i className="fa fa-check text-primary me-2"></i> Refresing to
-                get such a personal touch.
+                <i className="fa fa-check text-primary me-2"></i>Over 15 years
+                of experience in healthcare.
               </p>
               <p className="text-secondary">
-                <i className="fa fa-check text-primary me-2"></i> Duis aute
-                irure dolor in reprehenderit in voluptate.
+                <i className="fa fa-check text-primary me-2"></i> A dedicated
+                team of over 20 medical professionals and specialists.
               </p>
               <p className="text-secondary">
-                <i className="fa fa-check text-primary me-2"></i> Velit esse
-                cillum dolore eu fugiat nulla pariatur.
+                <i className="fa fa-check text-primary me-2"></i> Accredited by
+                Global Healthcare.
               </p>
             </div>
             <a href="#" className="discover__more text-white py-3 px-5">

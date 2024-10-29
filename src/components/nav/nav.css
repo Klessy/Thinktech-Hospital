@@ -124,6 +124,14 @@
   color: var(--primary);
 }
 
+.txt_active-primary {
+  color: var(--primary);
+}
+
+.txt_active-secondary {
+  color: red;
+}
+
 .mobile-screen {
   display: none;
 }

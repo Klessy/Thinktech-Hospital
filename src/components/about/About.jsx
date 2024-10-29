@@ -1,13 +1,18 @@
-import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Button from "../Button";
 import AboutImg from "../../assets/about.jpg";
 
 import "./about.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 600 });
+  }, []);
   return (
     <section className="about__section" id="about">
-      <div className="about__container container">
+      <div className="about__container container" data-aos="fade-up">
         <div className="about__img-con">
           <div className="about__img">
             <img
@@ -19,8 +24,8 @@ const About = () => {
           <div className="about-experience">15 years experience</div>
         </div>
         <div className="section-title text-start mb-5">
-          <h5 className="sub-title text_title mb-0">About Us</h5>
-          <h1 className="text_subtitle mb-4">A Legacy of Care & Excellence</h1>
+          <h4 className="sub-title text_title mb-0">About Us</h4>
+          <h2 className="text_subtitle mb-4">A Legacy of Care & Excellence</h2>
           <p className="mb-4">
             Founded in [Year], Ausmed Hospital has been dedicated to offering
             exceptional healthcare services for the community. With a team of

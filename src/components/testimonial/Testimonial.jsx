@@ -1,5 +1,3 @@
-import React from "react";
-
 import Slider from "react-slick";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Testimonials } from "../../data";
@@ -74,14 +72,14 @@ const Testimonial = () => {
       <div className="container testimonial__container">
         <div className="section-title mb-5">
           <div className="sub-style">
-            <h5
+            <h4
               className="sub-title text_title mb-0"
               style={{ lineHeight: "1" }}
             >
               Patient <br /> Testimonials
-            </h5>
+            </h4>
           </div>
-          <h1 className="mb-4 text_subtitle">What our Patients says</h1>
+          <h2 className="mb-4 text_subtitle">What our Patients says</h2>
         </div>
 
         <Slider {...settings}>

@@ -191,6 +191,7 @@ select {
   background-color: transparent;
   font-size: 1.5rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .form-btn:hover {

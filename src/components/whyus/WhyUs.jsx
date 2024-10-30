@@ -52,7 +52,7 @@ const WhyUs = () => {
               <img
                 src={WhyUsImg}
                 className="first__img rounded w-100"
-                alt="Image"
+                alt="Cutting edge Medical Technology"
               />
             </div>
           </div>

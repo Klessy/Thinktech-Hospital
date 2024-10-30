@@ -1,15 +1,26 @@
-import { useEffect } from "react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+import { useEffect, useRef } from "react";
 
 import { useForm } from "react-hook-form";
-// import { useRef } from 'react';
-
-import Select from "react-select";
+import emailjs from "emailjs-com";
 
 import "./contact.css";
 
 const Contact = () => {
+  const formSub = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_mgoy5mq",
+      "template_idw8ozv",
+      formSub.current,
+      "3PnIG0P6ABSd4jTUr"
+    );
+
+    e.target.reset();
+  };
+
   const form = useForm({
     date: new Date(),
   });
@@ -25,16 +36,6 @@ const Contact = () => {
       reset();
     }
   }, [isSubmitSuccessful, reset]);
-
-  const options = [
-    { value: "1", label: "Home and office cleaning" },
-    { value: "2", label: "Hotels and care homes cleaning" },
-    { value: "3", label: "Facility cleaning" },
-    { value: "4", label: "Tanks and confined space cleaning " },
-    { value: "5", label: "Plant and Machinery" },
-    { value: "6", label: "Chimney cleaning" },
-    { value: "7", label: "Window cleaning" },
-  ];
 
   const formatOptionLabel = ({ value, label, option }) => (
     <div style={{ display: "flex" }}>
@@ -76,8 +77,8 @@ const Contact = () => {
                 <h3>Opening Hours</h3>
                 <span className="underline"></span>
                 <div className="">
-                  <p>Mon to Fri: 7:30 am — 1:00 am</p>
-                  <p>Mon to Fri: 7:30 am — 1:00 am</p>
+                  <p>Mon to Sun: 00:00 am — 23:59 pm</p>
+                  <p>Mon to Sun: 00:00 am — 23:59 pm</p>
                 </div>
               </div>
               {/*  */}
@@ -115,32 +116,12 @@ const Contact = () => {
           {/* second col ---*/}
           <form
             className="second-col"
-            onSubmit={handleSubmit(submit)}
+            ref={formSub}
+            onSubmit={sendEmail}
             noValidate
           >
             <h2 className="text_title">Book an Appointment</h2>
-            {/* <div className="form-control">
-              <Select
-                options={options}
-                placeholder="Select your enquiry type"
-                formatOptionLabel={formatOptionLabel}
-                isClearable
-                classNames={{
-                  control: () => "form__control",
-                  input: () => "form__input",
-                  option: () => "form__option",
-                }}
-                theme={(theme) => ({
-                  ...theme,
-                  borderRadius: 6,
-                  colors: {
-                    ...theme.colors,
-                    primary: "black",
-                    primary25: "#23A036",
-                  },
-                })}
-              />
-            </div> */}
+
             <div className="form-control">
               <div className="row">
                 <input
@@ -148,6 +129,7 @@ const Contact = () => {
                   placeholder="Full Name *"
                   id="name"
                   type="text"
+                  name="name"
                   {...register("name", {
                     required: {
                       value: true,
@@ -160,6 +142,7 @@ const Contact = () => {
                   id="email"
                   placeholder="Email Address *"
                   type="email"
+                  name="email"
                   {...register("email", {
                     pattern: {
                       value:
@@ -193,11 +176,12 @@ const Contact = () => {
                 <select
                   className="form-select py-3 border-primary bg-transparent"
                   aria-label="Default select example"
+                  name="gender"
                 >
                   <option selected>Your Gender</option>
-                  <option value="1">Male</option>
-                  <option value="2">FeMale</option>
-                  <option value="3">Others</option>
+                  <option value="Male">Male</option>
+                  <option value="FeMale">FeMale</option>
+                  <option value="Others">Others</option>
                 </select>
               </div>
             </div>
@@ -217,11 +201,12 @@ const Contact = () => {
                 <select
                   className="form-select py-3 border-primary bg-transparent"
                   aria-label="Default select example"
+                  name="department"
                 >
                   <option selected>Department</option>
-                  <option value="1">Physiotherapy</option>
-                  <option value="2">Physical Helth</option>
-                  <option value="2">Treatments</option>
+                  <option value="Physiotherapy">Physiotherapy</option>
+                  <option value="Physical Health">Physical Health</option>
+                  <option value="Treatments">Treatments</option>
                 </select>
               </div>
             </div>
@@ -232,6 +217,7 @@ const Contact = () => {
                 className="input-message"
                 type="message"
                 id="message"
+                name="message"
                 {...register("message", {
                   required: {
                     value: true,
@@ -247,15 +233,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      {/* map */}
-      {/* <iframe
-        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxfor28/30 Royce road owerri, imo stated&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-        allowFullScreen=""
-        loading="lazy"
-        samesite="Strict"
-        title="map"
-        style={{ width: "100%", height: "45rem", border: "0px" }}
-      ></iframe> */}
     </section>
   );
 };

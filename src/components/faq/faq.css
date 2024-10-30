@@ -12,7 +12,7 @@
 }
 
 .faqs__container p {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .faqs__items {
@@ -28,19 +28,19 @@
 }
 
 .card {
-  font-family: var(--font-base);
   font-size: 1.2rem;
   font-weight: 400;
   background: var(--bs-light);
   padding: 1.5rem;
   border: 2px solid transparent;
-  border-radius: var(--border-radius-1);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   transition: var(--transition);
 }
 
 .card:hover {
   /* background: var(--semi-gray); */
-  border-color: var(--white);
+  /* border-color: var(--white); */
   transform: translateY(-0.5rem);
 }
 

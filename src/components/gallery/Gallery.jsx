@@ -23,7 +23,7 @@ const Gallery = () => {
       <div className="gallery__container container">
         {gallery.map(({ id, img }) => (
           <div className="gallery__img" key={id}>
-            <img src={img} alt="Welcome to our Gallery" />
+            <img src={img} alt="Modern Comfortable setting" />
             {/* <p className = "gallery__image-icon">My name</p> */}
             <div className="">
               <a href="https://github.com/klessy">

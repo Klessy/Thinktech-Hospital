@@ -18,7 +18,7 @@ const About = () => {
             <img
               src={AboutImg}
               className="first__img rounded w-100"
-              alt="Image"
+              alt="Exceptional Health Service"
             />
           </div>
           <div className="about-experience">15 years experience</div>
